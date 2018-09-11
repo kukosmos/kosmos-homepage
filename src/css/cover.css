@@ -4,7 +4,7 @@
 
 /* links */
 a,
-a:focus
+a:focus,
 a:hover {
   color: #fff;
 }
@@ -82,4 +82,25 @@ body {
   .nav-masthead {
     float: right;
   }
+}
+
+/*
+ * cover
+ */
+
+.cover {
+  padding: 0 1.5rem;
+}
+
+.cover .btn-lg {
+  padding: .75rem 1.25rem;
+  font-weight: 700;
+}
+
+/*
+ * footer
+ */
+
+.mastfoot {
+  color: rgba(255, 255, 255, .5);
 }
