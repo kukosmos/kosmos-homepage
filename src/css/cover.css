@@ -105,11 +105,15 @@ body {
 }
 
 /*
- * cover
+ * body
  */
 
 .cover {
   padding: 0 1.5rem;
+}
+
+.cover .list-content {
+  max-width: 42rem;
 }
 
 .cover .btn-lg {
