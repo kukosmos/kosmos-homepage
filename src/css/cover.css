@@ -41,6 +41,14 @@ body {
   max-width: 42em;
 }
 
+.bg {
+  background-image: url("../../assets/index_bg.jpg");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 /*
  * header
  */
