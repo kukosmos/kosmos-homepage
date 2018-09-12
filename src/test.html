@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link href="../assets/icons/small_logo.ico" rel="icon" />
+    <link href="../assets/small_icon.ico" rel="icon" />
     <title>KOSMOS, Korea Univ. Programming Club</title>
 
     <!-- Bootstrap CSS -->
@@ -12,28 +12,27 @@
     <!-- Custom CSS -->
     <link href="css/cover.css" rel="stylesheet" />
   </head>
-  <body class="text-center bg">
-    <div class="cover-container d-flex w-100 h-100 p-4 mx-auto flex-column">
+  <body class="text-center">
+    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
 
       <!-- header -->
       <header class="masthead mb-auto">
         <div class="inner">
           <h3 class="masthead-brand">KOSMOS</h3>
           <nav class="nav nav-masthead justify-content-center">
-            <a class="nav-link active" href="#">Home</a>
+            <a class="nav-link" href="index.html">Home</a>
             <a class="nav-link" href="studies.html">Studies</a>
             <a class="nav-link" href="staffs.html">Staffs</a>
-            <a class="nav-link" href="test.html">Test</a>
-            <a class="btn btn-secondary" href="agora/index.html">AGORA</a>
+            <a class="nav-link active" href="#">Test</a>
+            <a class="nav-link" href="agora/index.html">AGORA</a>
           </nav>
         </div>
       </header>
 
       <!-- body -->
       <main class="inner cover" role="main">
-        <!-- should fill in here -->
-        <h1>KOSMOS</h1>
-        <p>DO ANYTHING</p>
+          <canvas id="glCanvas"></canvas>
+          <script src="js/Triangle.js"></script>
       </main>
 
       <!-- footer -->
