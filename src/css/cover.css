@@ -21,6 +21,7 @@ a:hover {
 /* custom list background */
 .li-background {
   background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
 }
 /*
  * base structure
