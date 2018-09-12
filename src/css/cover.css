@@ -70,6 +70,14 @@ body {
   margin-left: 1rem;
 }
 
+.nav-masthead .btn-secondary {
+  font-weight: 700
+}
+
+.nav-masthead .nav-link + .btn-secondary {
+  margin-left: 1rem;
+}
+
 .nav-masthead .active {
   color: #fff;
   border-bottom-color: #fff;
