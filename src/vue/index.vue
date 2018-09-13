@@ -9,11 +9,7 @@ var body = new Vue({
   el: "#body",
   data: {
     shorten: false,
-<<<<<<< HEAD
     msg: '&nbsp'
-=======
-    msg: ""
->>>>>>> 9a0b6706c3c408c5e93be03d8bd21e929179328b
   },
   methods: {
     triggerMessage: function() {
