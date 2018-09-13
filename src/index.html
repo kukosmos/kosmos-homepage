@@ -33,13 +33,15 @@
 
       <!-- body -->
       <main class="inner cover" role="main" id="body">
-        <transition>
+        <transition name="fade" mode="out-in" appear v-on:after-appear="triggerShorten">
           <div v-bind:key="shorten">
             <h1 style="font-weight: 700" key="short">{{ shorten ? 'KOSMOS' : 'KOrea university Software MaestrOS' }}</h1>
           </div>
         </transition>
-        <transition name="fade">
-          <p>{{msg}}</p>
+        <transition name="slide-fade" mode="out-in">
+          <div v-bind:key="msg">
+            <p style="font-weight: 500">{{msg}}</p>
+          </div>
         </transition>
       </main>
 
