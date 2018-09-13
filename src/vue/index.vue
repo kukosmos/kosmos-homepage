@@ -8,7 +8,7 @@ var body = new Vue ({
   el: '#body',
   data: {
     shorten: false,
-    msg: ''
+    msg: '&nbsp'
   },
   methods: {
     triggerMessage: function() {
