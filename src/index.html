@@ -34,8 +34,8 @@
       <!-- body -->
       <main class="inner cover" role="main" id="body">
         <transition name="fade" mode="out-in" appear v-on:after-appear="triggerShorten">
-          <div v-bind:key="shorten">
-            <h1 style="font-weight: 700" key="short">{{ shorten ? 'KOSMOS' : 'KOrea university Software MaestrOS' }}</h1>
+          <div v-bind:key="title">
+            <h1 style="font-weight: 700"><span v-html="title"></h1>
           </div>
         </transition>
         <transition name="slide-fade" mode="out-in">
