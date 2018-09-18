@@ -43,7 +43,7 @@ body {
 }
 
 .bg {
-  background-image: url("../../assets/images/main_index_bg.jpg");
+  background-image: url("../assets/images/main_index_bg.jpg");
   height: 100%;
   background-position: center;
   background-repeat: no-repeat;
