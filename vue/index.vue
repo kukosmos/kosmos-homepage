@@ -8,7 +8,7 @@ var msg_list = [
 var body = new Vue({
   el: "#body",
   data: {
-    shorten: false,
+    title: '&nbsp',
     msg: '&nbsp'
   },
   methods: {
@@ -18,13 +18,14 @@ var body = new Vue({
       }, 3000);
     },
     triggerShorten: function() {
+      this.title = 'KOrea university Software MaestrOS';
       setTimeout(() => {
-        this.shorten = true;
+        this.title = 'KOSMOS';
         setTimeout(() => {
           this.msg = msg_list[0];
           this.triggerMessage();
         }, 2000);
-      }, 2000);
+      }, 4000);
     }
   }
 });
