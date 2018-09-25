@@ -60,7 +60,6 @@ gl.compileShader(vertexShader);
 
 //Fragment Shader에 소스 설정
 gl.shaderSource(fragmentShader, fragmentShaderStr);
-
 //Fragment Shader 컴파일
 gl.compileShader(fragmentShader);
 
