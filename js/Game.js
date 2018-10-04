@@ -11,7 +11,6 @@ if (WEBGL.isWebGLAvailable()) {
 }
 
 function init() {
-
     // Setup
     renderer = new THREE.WebGLRenderer({ canvas: document.getElementById('canvas'), antialis: true });
     renderer.setClearColor(0x000000);
@@ -33,7 +32,7 @@ function init() {
      PointLight.position.z = 100;
      scene.add(PointLight);
 
-    var geometry = new THREE.BoxGeometry(200,200,200);
+    var geometry = new THREE.BoxGeometry(100,100,100);
     var material = new THREE.MeshLambertMaterial({color: 0xff0000});
     mesh = new THREE.Mesh(geometry, material);
     mesh.position.z = -100;
