@@ -23,7 +23,6 @@ function init() {
     // Make a scene
     scene = new THREE.Scene();
 
-<<<<<<< HEAD
      //Make light
      var Ambientlight = new THREE.AmbientLight(0xffffff, 0.5);
      Ambientlight.position.z = 100;
@@ -33,7 +32,7 @@ function init() {
      PointLight.position.z = 100;
      scene.add(PointLight);
 
-    var geometry = new THREE.BoxGeometry(200,200,200);
+    var geometry = new THREE.BoxGeometry(100,100,100);
     var material = new THREE.MeshLambertMaterial({color: 0xff0000});
     mesh = new THREE.Mesh(geometry, material);
     mesh.position.z = -100;
@@ -62,7 +61,4 @@ function animate() {
 
     renderer.render(scene, camera);
     requestAnimationFrame(animate);
-=======
-
->>>>>>> dbaeae8305a3737abeff31cc4700e3496bd52b6a
 }

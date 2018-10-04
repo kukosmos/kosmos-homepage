@@ -1,18 +1,9 @@
 ﻿# Visual Studio
 /.vs
-<<<<<<< HEAD
+
 typings/index.d.ts
 typings.json
 typings.json
 typings/index.d.ts
-=======
-<<<<<<< HEAD
-typings/index.d.ts
-typings.json
-=======
-typings.json
-typings/index.d.ts
->>>>>>> 8d1940b0deb723992331c7056313c04ab40aa927
->>>>>>> dbaeae8305a3737abeff31cc4700e3496bd52b6a
 typings/globals/three/index.d.ts
 typings/globals/three/typings.json
