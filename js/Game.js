@@ -11,7 +11,6 @@ if (WEBGL.isWebGLAvailable()) {
 }
 
 function init() {
-
     // Setup
     renderer = new THREE.WebGLRenderer({ canvas: document.querySelector("#canvas") });
 
@@ -22,5 +21,6 @@ function init() {
 
     // Make a scene
     scene = new THREE.Scene();
+
 
 }
