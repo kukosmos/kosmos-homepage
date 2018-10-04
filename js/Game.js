@@ -11,7 +11,6 @@ if (WEBGL.isWebGLAvailable()) {
 }
 
 function init() {
-
     // Setup
     renderer = new THREE.WebGLRenderer({ canvas: document.getElementById('canvas'), antialis: true });
     renderer.setClearColor(0x000000);
@@ -24,6 +23,7 @@ function init() {
     // Make a scene
     scene = new THREE.Scene();
 
+<<<<<<< HEAD
      //Make light
      var Ambientlight = new THREE.AmbientLight(0xffffff, 0.5);
      Ambientlight.position.z = 100;
@@ -62,4 +62,7 @@ function animate() {
 
     renderer.render(scene, camera);
     requestAnimationFrame(animate);
+=======
+
+>>>>>>> dbaeae8305a3737abeff31cc4700e3496bd52b6a
 }
