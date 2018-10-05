@@ -10,14 +10,14 @@ if (WEBGL.isWebGLAvailable()) {
 
 function init() {
     // Setup
-    renderer = new THREE.WebGLRenderer({ canvas: document.getElementById('canvas'), antialis: true });
-    renderer.setClearColor(0x000000);
+    var canvas = document.getElementById('myCanvas');
+    renderer = new THREE.WebGLRenderer({ canvas: canvas, antialis: true });
+    renderer.setClearColor(0x999999);
 
     // Make and setup a camera.
-    var aspect = window.innerWidth / window.innerHeight;
-    camera = new THREE.PerspectiveCamera(75, aspect, 1, 1000);
+    var aspect = canvas.width / canvas.height;
+    camera = new THREE.PerspectiveCamera(75, aspect, 1, 2000);
     camera.position.y = 400;
-
     // Make a scene
     scene = new THREE.Scene();
 
@@ -32,31 +32,37 @@ function init() {
 
     // Make objects
     var geometry = new THREE.PlaneGeometry( 500, 500 );
-    var material = new THREE.MeshBasicMaterial( { color: 0x1f1f1f , side: THREE.DoubleSide } );
-    var mesh = new THREE.Mesh(geometry, material);
-    mesh.position.set(0, 250, 0);
+    var material = new THREE.MeshBasicMaterial( { color: 0xffffff , side: THREE.DoubleSide } );
+    var Table = new THREE.Mesh(geometry, material);
+    Table.position.set(0, 250, -2);
 
-    var girdTable = new THREE.GridHelper(500, 10, 0xffffff );
-    girdTable.rotation.x = -Math.PI / 2;
+    var girdTable = new THREE.GridHelper(500, 10, 0x000000, 0x000000 );
+    girdTable.rotation.x += Math.PI / 2;
     girdTable.position.set(0, 250, 0);
-   
-    var gridFloor = new THREE.GridHelper(2000, 40, 0xffffff);
+
+    geometry = new THREE.PlaneGeometry( 2000, 2000 );
+    material = new THREE.MeshBasicMaterial( { color: 0xffffff, side: THREE.DoubleSide } );
+    var Floor = new THREE.Mesh(geometry, material);
+    Floor.rotation.x += Math.PI / 2;
+    Floor.position.y -= 2;
+
+    var gridFloor = new THREE.GridHelper( 2000, 40, 0x000000, 0x000000 );
     
     var group = new THREE.Group();
 
-    group.add(mesh);
+    group.add(Table);
     group.add(girdTable);
+    group.add(Floor);
     group.add(gridFloor);
 
-    group.position.set(0, 0, -500);
+    group.position.set(0, 0, -1000);
     scene.add(group);
-    console.log(scene.position);
 }
 
 function resize() {
-    var width = renderer.domElement.clientWidth;
-	var height = renderer.domElement.clientHeight;
-	if (renderer.domElement.width !== width || renderer.domElement.height !== height) {
+    var width = canvas.width;
+	var height = canvas.height;
+	if (canvas.width !== width || canvas.height !== height) {
 		renderer.setSize(width, height, false);
 		camera.aspect = width / height;
 		camera.updateProjectionMatrix();
