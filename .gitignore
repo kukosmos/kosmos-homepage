@@ -1,2 +1,10 @@
 ﻿# Visual Studio
 /.vs
+
+typings/index.d.ts
+typings.json
+typings.json
+typings/index.d.ts
+typings/globals/three/index.d.ts
+typings/globals/three/typings.json
+jsconfig.json
