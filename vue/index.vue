@@ -1,11 +1,11 @@
-var msg_list = [
+const msg_list = [
   "Hello, world!",
   "KOrea univ. Software MaestrOS",
   "Eat, Code, Sleep"
   /* please fill in messages */
 ];
 
-var body = new Vue({
+const body = new Vue({
   el: "#body",
   data: {
     title: '&nbsp',
