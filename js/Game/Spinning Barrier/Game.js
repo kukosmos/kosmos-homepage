@@ -42,7 +42,7 @@ function init() {
     // Controls
     control = new THREE.OrbitControls(camera, renderer.domElement);
     control.enableKeys = false;
-    camera.position.set(0, 50, 100);
+    camera.position.set(0, 120, 150);
     control.update();
 
     // Make a scene
