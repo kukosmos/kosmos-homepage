@@ -30,7 +30,7 @@ THREE.OutlineEffect = function ( renderer, parameters ) {
 
 	this.enabled = true;
 
-	var defaultThickness = parameters.defaultThickness !== undefined ? parameters.defaultThickness : 0.003;
+	var defaultThickness = parameters.defaultThickness !== undefined ? parameters.defaultThickness : 0.004;
 	var defaultColor = new THREE.Color().fromArray( parameters.defaultColor !== undefined ? parameters.defaultColor : [ 0, 0, 0 ] );
 	var defaultAlpha = parameters.defaultAlpha !== undefined ? parameters.defaultAlpha : 1.0;
 	var defaultKeepAlive = parameters.defaultKeepAlive !== undefined ? parameters.defaultKeepAlive : false;
