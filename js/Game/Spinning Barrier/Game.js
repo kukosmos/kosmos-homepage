@@ -270,7 +270,7 @@ function animate() {
     effect.render(scene, camera);
     stats.end();
     
-    if(true)
+    if(life!=0)
         requestAnimationFrame(animate);
     else
         alert("Game Over\n" + "Score : " + score.toString());
