@@ -42,7 +42,6 @@
             angleBegin += 2 * Math.PI;
         var angleEnd = torusBegin + torusArc;
 
-        console.log(angleBegin);
         if(!this.collide && 
             (torusRadius-10 < defaultBoundary) && (defaultBoundary < torusRadius+10) &&
             (angleBegin < angle) && (angle < angleEnd))
