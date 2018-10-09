@@ -22,7 +22,7 @@ const body = new Vue({
       setTimeout(() => {
         this.title = 'KOSMOS';
         setTimeout(() => {
-          this.msg = msg_list[0];
+          this.msg ='Hello, world!';
           this.triggerMessage();
         }, 2000);
       }, 4000);
